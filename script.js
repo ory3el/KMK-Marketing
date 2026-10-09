@@ -1,8 +1,4 @@
-/* ===== CONFIGURAÇÃO DO WHATSAPP =====
-   Troque pelo número com DDI + DDD, só dígitos. Ex.: "5511999999999" */
 const WHATSAPP_NUMBER = "SEU_NUMERO_WHATSAPP";
-
-/* Mensagem automática de cada botão (atributo data-wa no HTML) */
 const WA_MESSAGES = {
   header: "Olá! Gostaria de saber como a KMK Marketing pode trazer mais clientes para o meu negócio.",
   hero: "Olá! Vim pelo site da KMK Marketing e quero conversar sobre como atrair mais clientes para minha empresa.",
@@ -56,3 +52,12 @@ if ("IntersectionObserver" in window) {
 } else {
   items.forEach((el) => el.classList.add("in"));
 }
+
+/* ===== Theme ===== */
+const darkThemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+function handleThemeChange(e) {
+  const isDark = e.matches;
+  document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+}
+handleThemeChange(darkThemeQuery);
+darkThemeQuery.addEventListener("change", handleThemeChange);
