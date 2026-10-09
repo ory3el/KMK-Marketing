@@ -1,4 +1,3 @@
-/* KMK Marketing — cores e medidas principais: edite aqui */
 :root{--bg:#0a0a0b;--bg2:#111113;--ln:#26262a;--tx:#f4f4f5;--mu:#a1a1aa;--ac:#25e07b;--acd:#04140a;--r:22px}
 *,*::before,*::after{box-sizing:border-box;margin:0}
 html{scroll-padding-top:76px;-webkit-text-size-adjust:100%}
@@ -165,4 +164,28 @@ h2{font-size:clamp(1.9rem,4.6vw,3.1rem);margin:14px 0 18px}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0s!important}
   .js .rv{opacity:1;translate:none}
+}
+
+/* ===== Prefers Color Scheme: Light ===== */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f8fafc;
+    --bg2: #ffffff;
+    --ln: #e2e8f0;
+    --tx: #0f172a;
+    --mu: #64748b;
+    --ac: #16a34a;
+    --acd: #ffffff;
+  }
+
+  .hd.scrolled,
+  .hd.open {background: rgba(248, 250, 252, 0.85)}
+  .vc {background: linear-gradient(160deg, #ffffff, #f1f5f9); box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.08)}
+  .fn div,
+  .ic {background: #f1f5f9}
+  .dif {border-top-color: var(--tx)}
+  .dif li {border-bottom-color: var(--ln)}
+  .dif li:hover {background: var(--tx); color: var(--bg)}
+  .tip {background: #0f172a; color: #ffffff}
+  @media (max-width: 860px) {#nav {background: rgba(248, 250, 252, 0.97)}}
 }
