@@ -14,10 +14,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://unpkg.com/lucide@latest"></script>
  
-  <!-- Estilos CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="marble-theme">
+
+  <!-- Luzes de Ambiente (Spotlights) -->
+  <div class="spotlight spotlight-left"></div>
+  <div class="spotlight spotlight-right"></div>
+  <div class="spotlight spotlight-center"></div>
 
   <!-- Navegação -->
   <nav class="navbar">
@@ -38,27 +42,36 @@
   <!-- Seção Hero -->
   <section class="hero-section">
     <div class="container hero-content">
-      <div class="badge">Estratégia • Criatividade • Resultados</div>
-      <h1 class="hero-title">KMK Marketing</h1>
-      <p class="hero-subtitle">Aceleração de Negócios Locais</p>
+      <div class="em-breve-tag">EM BREVE</div>
+      <div class="crown-hero"><i data-lucide="crown"></i></div>
+      <h1 class="hero-title">KMK</h1>
+      <p class="hero-subtitle">AGÊNCIA DE MARKETING</p>
+     
+      <div class="badge-sub">Estratégia • Criatividade • Resultados</div>
       <p class="hero-description">
         Conectamos sua empresa aos clientes certos. Unimos inteligência comercial e presença digital para transformar visualizações em vendas reais no seu caixa.
       </p>
+
       <div class="hero-ctas">
         <a href="https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20aceleração%20de%20negócios." target="_blank" class="btn-primary">
           <i class="fab fa-whatsapp"></i> Falar no WhatsApp
         </a>
-        <a href="https://instagram.com/kmk.agenciamarketing" target="_blank" class="btn-secondary">
-          <i class="fab fa-instagram"></i> @kmk.agenciamarketing
+        <a href="https://instagram.com/kmk.agenciamarketing" target="_blank" class="btn-instagram">
+          <i class="fab fa-instagram"></i> Siga o Instagram Oficial <br><span class="insta-handle">.kmk.agenciamarketing</span>
         </a>
       </div>
+    </div>
+
+    <!-- Pódio de Mármore Espelhado na Base -->
+    <div class="podium-base">
+      <div class="podium-ring"></div>
     </div>
   </section>
 
   <!-- Seção Sobre Nós -->
-  <section id="sobre" class="section dark-bg">
+  <section id="sobre" class="section marble-card-section">
     <div class="container grid-2">
-      <div class="about-card">
+      <div class="about-card-marble">
         <div class="gold-crown-wrapper">
           <i data-lucide="crown" class="gold-crown-icon"></i>
         </div>
@@ -107,7 +120,7 @@
   </section>
 
   <!-- Seção Diferenciais -->
-  <section id="diferenciais" class="section dark-bg">
+  <section id="diferenciais" class="section marble-card-section">
     <div class="container">
       <div class="center-header">
         <span class="section-tag">DIFERENCIAIS</span>
@@ -187,7 +200,6 @@
     </div>
   </footer>
 
-  <!-- Scripts JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
